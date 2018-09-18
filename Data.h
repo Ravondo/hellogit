@@ -10,8 +10,8 @@ class Data
 	public:
 	Data();
 	Data(int a, float b);
-	int getX;
-	float getY;
+	int getX();
+	float getY();
 	void setX(int a);
 	void setY(float b);
 };

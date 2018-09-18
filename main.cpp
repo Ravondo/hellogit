@@ -12,10 +12,10 @@ int main()
 	v2.pop_back();
 	cout << "v2 has" << v2.size() << "elements";
 	
-	for (int i = 0; i < v2.size(); i++)
-	{
-		cout << v[i] << endl;
-	}
+	//for (int i = 0; i < v2.size(); i++)
+	//{
+		//cout << v[i] << endl;
+	//}
 	
 	for (auto x:v2)
 	{
