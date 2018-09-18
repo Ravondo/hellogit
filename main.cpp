@@ -10,7 +10,7 @@ int main()
 	v1.push_back(12);
 	v2.push_back(17);
 	v2.pop_back();
-	cout << "v2 has" << v2.size() << "elements";
+	cout << "v2 has " << v2.size() << " elements" << endl;
 	
 	//for (int i = 0; i < v2.size(); i++)
 	//{
