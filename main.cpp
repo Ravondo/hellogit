@@ -29,3 +29,17 @@ int main()
 	d0.setY(3.14);
 	return 0;
 }
+
+void selectionSort(auto& x)
+{
+	for (int i = 0; i < x.size(); i++)
+	{
+		int min_index = i;
+		for (int j = i + 1; j < x.size(); j++)
+		{
+			if (x[ min_index ] > x[ j ])
+			min_index = j;
+		}
+		swap (x[ i ], x[ min_index ]);
+	}
+}
