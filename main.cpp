@@ -16,7 +16,7 @@ int main()
 	//{
 		//cout << v[i] << endl;
 	//}
-	
+	selectionSort(v2);
 	for (auto x:v2)
 	{
 		cout << x << endl;
