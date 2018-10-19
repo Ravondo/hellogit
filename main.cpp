@@ -11,12 +11,7 @@ int main()
 	v2.push_back(17);
 	v2.pop_back();
 	cout << "v2 has " << v2.size() << " elements" << endl;
-	
-	//for (int i = 0; i < v2.size(); i++)
-	//{
-		//cout << v[i] << endl;
-	//}
-	selectionSort(v2);
+    
 	for (auto x:v2)
 	{
 		cout << x << endl;
@@ -30,16 +25,10 @@ int main()
 	return 0;
 }
 
-void selectionSort(auto& x)
+void bubbleSort(auto& v)
 {
-	for (int i = 0; i < x.size(); i++)
-	{
-		int min_index = i;
-		for (int j = i + 1; j < x.size(); j++)
-		{
-			if (x[ min_index ] > x[ j ])
-			min_index = j;
-		}
-		swap (x[ i ], x[ min_index ]);
-	}
+	for (int i = 0; i < v.size(); i++)
+	for (int j = 0; j < v.size(); j++)
+	if (v[j].getX > v[j+1].getX)
+	swap (v[j], v[j+1];
 }
